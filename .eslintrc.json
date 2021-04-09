@@ -1,0 +1,15 @@
+{
+  "extends": [
+    "@movable/eslint-config",
+    "@movable/eslint-config-node",
+    "@movable/eslint-config-typescript"
+  ],
+  "rules": {
+    "node/no-unsupported-features/es-syntax": "off"
+  },
+  "settings": {
+    "node": {
+      "tryExtensions": [".js", ".ts"]
+    }
+  }
+}
