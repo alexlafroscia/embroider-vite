@@ -1,7 +1,7 @@
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
-const { VitePackager } = require('embroider-vite');
+const { Vite } = require('embroider-vite');
 
 module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
@@ -21,7 +21,7 @@ module.exports = function (defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
-  return require('@embroider/compat').compatBuild(app, VitePackager, {
+  return require('@embroider/compat').compatBuild(app, Vite, {
     viteConfig: {
       logLevel: 'info',
     },
