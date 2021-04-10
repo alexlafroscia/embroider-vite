@@ -26,6 +26,9 @@
     "ts-jest": "^26.5.4",
     "typescript": "^4.2.4"
   },
+  "resolutions": {
+    "ember-inflector": "github:emberjs/ember-inflector#invalid-import"
+  },
   "lint-staged": {
     "*.{js,ts}": "eslint --fix",
     "*.{json,md,yml}": "prettier --write"
